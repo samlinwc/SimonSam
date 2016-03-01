@@ -17,35 +17,35 @@ public class Squad {
 		
 		PlayerList = new ArrayList<Player>();
 
-		GoalKeeper Shen = new GoalKeeper("" , 0);
+		GoalKeeper Shen = new GoalKeeper( "" , 0);
 		PlayerList.add(Shen);
-		GoalKeeper Mundo = new GoalKeeper("" , 1111);
+		GoalKeeper Mundo = new GoalKeeper( "" , 1111);
 		PlayerList.add(Mundo);
-		Striker Nidalee = new Striker( "Striker" , 1);
+		Striker Nidalee = new Striker( "" , 1);
 		PlayerList.add(Nidalee);
 		Striker Caitlin = new Striker( "" , 11);
 		PlayerList.add(Caitlin);
-		MidField KogMaw = new MidField( "Defender" , 10);
-		PlayerList.add(KogMaw);
 		Striker Lucian = new Striker( "" , 100);
 		PlayerList.add(Lucian);
-		MidField Ezreal = new MidField("" , 101);
+		MidField KogMaw = new MidField( "" , 10);
+		PlayerList.add(KogMaw);
+		MidField Ezreal = new MidField( "" , 101);
 		PlayerList.add(Ezreal);
-		MidField Ahri = new MidField("" , 111);
+		MidField Ahri = new MidField( "" , 111);
 		PlayerList.add(Ahri);
-		MidField Varus = new MidField("" , 1000);
+		MidField Varus = new MidField( "" , 1000);
 		PlayerList.add(Varus);
-		MidField Kalista = new MidField("" , 1001);
+		MidField Kalista = new MidField( "" , 1001);
 		PlayerList.add(Kalista);
-		Defender Veigar = new Defender("" , 1010);
+		Defender Veigar = new Defender( "" , 1010);
 		PlayerList.add(Veigar);
-		Defender Brand = new Defender("" , 1011);
+		Defender Brand = new Defender( "" , 1011);
 		PlayerList.add(Brand);
-		Defender Sona = new Defender("" , 1100);
+		Defender Sona = new Defender( "" , 1100);
 		PlayerList.add(Sona);
-		Defender Jhin = new Defender("" , 1101);
+		Defender Jhin = new Defender( "" , 1101);
 		PlayerList.add(Jhin);
-		Defender Syndra = new Defender("" , 1110);
+		Defender Syndra = new Defender( "" , 1110);
 		PlayerList.add(Syndra);
 	}
 	

@@ -2,16 +2,18 @@ package simonsam.model;
 
 public class Defender extends Player {
 	
-	public String type = " Defender ";
+	private String type = " Defender ";
+	static String position;
 
 	public Defender(String Name, int ID) {
-		super(Name, ID);
+		super(position, ID);
 		
-		if (Name == ""){
-			Name = "Striker";
+		if ( Name == ""){
+			position = " Defender ";
 			return;
 		}
-		else if (Name != ""){
+		else if ( Name != ""){
+			position = Name;			
 			return;
 		}
 	}
