@@ -3,7 +3,7 @@ package simonsam.model;
 public class MidField extends Player {
 
 	private String type = " MidField ";
-	static String position;
+	static String position = " MidField ";
 	
 	public MidField(String Name, int ID) {
 		super(position, ID);

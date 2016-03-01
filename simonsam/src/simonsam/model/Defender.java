@@ -3,7 +3,7 @@ package simonsam.model;
 public class Defender extends Player {
 	
 	private String type = " Defender ";
-	static String position;
+	static String position = " Defender ";
 
 	public Defender(String Name, int ID) {
 		super(position, ID);

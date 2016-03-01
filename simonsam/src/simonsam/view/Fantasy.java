@@ -8,13 +8,13 @@ import javax.swing.JPanel;
 
 public class Fantasy extends JFrame {
 	
-	/*public Fantasy() {
+	public Fantasy() {
 		
 		super(" Fantasy Football ");
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		//createWidgets();
+		createWidgets();
 		
 		this.setVisible(true);
 		
@@ -23,7 +23,7 @@ public class Fantasy extends JFrame {
 	private void createWidgets(){
 		
 		String [] formation = {"Select formation", "4-4-2" , "4-3-3", "3-5-2", "5-3-2", "3-4-3", "4-5-1"};
-		@SuppressWarnings("unchecked")
+		@SuppressWarnings({ "unchecked", "rawtypes" })
 		JComboBox SelectFormation = new JComboBox(formation);
 		this.setSize(600, 800);
 		this.setLayout(new BorderLayout());
@@ -31,5 +31,5 @@ public class Fantasy extends JFrame {
 		
 		this.add(SelectFormation,BorderLayout.NORTH);
 	}
-*/
+
 }

@@ -2,8 +2,8 @@ package simonsam.model;
 
 public class GoalKeeper extends Player {
 
-	private String type = " GoalKeeper ";
-	static String position;
+//	private String type = " GoalKeeper ";
+	static String position = " GoalKeeper ";
 	
 	public GoalKeeper(String Name, int ID) {
 		super(position, ID);
