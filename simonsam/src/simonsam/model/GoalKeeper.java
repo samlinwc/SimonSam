@@ -17,4 +17,5 @@ public class GoalKeeper extends Player {
 			return;
 		}
 	}
+
 }

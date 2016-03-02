@@ -4,8 +4,7 @@ public class Player {
 	
 	private String Name;
 	private int ID;
-	private String type;
-	
+
 	// two goalkeeper five midfield five defender three striker
 
 	public Player(String Name, int ID ) {
@@ -16,8 +15,9 @@ public class Player {
 	public String toString(){
 		return Name;
 	}
-	
-	public String getType(){
-		return type;
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return Name;
 	}
 }

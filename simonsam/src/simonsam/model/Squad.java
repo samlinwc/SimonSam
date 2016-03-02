@@ -1,22 +1,52 @@
 package simonsam.model;
 
-import java.util.ArrayList;
-
-import simonsam.model.Player;
+import java.awt.List;
 
 public class Squad {
 	
-	private ArrayList<Player> PlayerList;
+	Player[] players = new Player[15];
+
 	
 	public Squad(){
-		CreatePlayerList();
-		System.out.println(PlayerList);
+		gerenate();
 	}
 
-	private void CreatePlayerList() {
+	private void gerenate() {
 		
-		PlayerList = new ArrayList<Player>();
-
+		int count = 0;
+		
+		for( int i = 0 ; i < 2  ; i++){
+			GoalKeeper goalkeeper = new GoalKeeper( "" , count );
+			players[i]= goalkeeper;
+			count++;
+			System.out.println(count);
+			System.out.println(goalkeeper);
+		}
+		for( int i = 0 ;  i < 5 ; i++){
+			MidField midfield = new MidField( "" , count );
+			players[i]= midfield;
+			count++;
+			System.out.println(count);
+			System.out.println(midfield);
+		}
+		for( int i = 0 ; i < 5  ; i++){
+			Defender defender = new Defender( "" , count );
+			players[i]= defender;
+			count++;
+			System.out.println(count);
+			System.out.println(defender);
+		}
+		for( int i = 0 ; i < 3  ; i++){
+			Striker striker = new Striker( "" , count );
+			players[i]= striker;
+			count++;
+			System.out.println(count);
+                                               
+			
+			System.out.println(striker);
+		}
+		
+		/*
 		GoalKeeper Shen = new GoalKeeper( "" , 0);
 		PlayerList.add(Shen);
 		GoalKeeper Mundo = new GoalKeeper( "" , 1111);
@@ -47,10 +77,7 @@ public class Squad {
 		PlayerList.add(Jhin);
 		Defender Syndra = new Defender( "" , 1110);
 		PlayerList.add(Syndra);
-	}
-	
-	public ArrayList<Player> getPlayerList(){
-		return PlayerList;
-	}
+		*/
+	}	
 
 }
