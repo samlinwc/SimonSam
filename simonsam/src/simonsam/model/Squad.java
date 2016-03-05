@@ -5,39 +5,39 @@ import java.awt.List;
 public class Squad {
 	
 	Player[] players = new Player[15];
-
+	
 	
 	public Squad(){
-		gerenate();
+		generate();
 	}
 
-	private void gerenate() {
+	private void generate() {
 		
 		int count = 0;
 		
 		for( int i = 0 ; i < 2  ; i++){
-			GoalKeeper goalkeeper = new GoalKeeper( "" , count );
+			GoalKeeper goalkeeper = new GoalKeeper( "" , count, "None");
 			players[i]= goalkeeper;
 			count++;
 			System.out.println(count);
 			System.out.println(goalkeeper);
 		}
 		for( int i = 0 ;  i < 5 ; i++){
-			MidField midfield = new MidField( "" , count );
+			MidField midfield = new MidField( "" , count, "None" );
 			players[i]= midfield;
 			count++;
 			System.out.println(count);
 			System.out.println(midfield);
 		}
 		for( int i = 0 ; i < 5  ; i++){
-			Defender defender = new Defender( "" , count );
+			Defender defender = new Defender( "" , count, "None");
 			players[i]= defender;
 			count++;
 			System.out.println(count);
 			System.out.println(defender);
 		}
 		for( int i = 0 ; i < 3  ; i++){
-			Striker striker = new Striker( "" , count );
+			Striker striker = new Striker( "" , count, "None" );
 			players[i]= striker;
 			count++;
 			System.out.println(count);

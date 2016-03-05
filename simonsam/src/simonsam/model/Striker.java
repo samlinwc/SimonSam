@@ -5,8 +5,8 @@ public class Striker extends Player{
 	private String type = " Striker ";
 	static String position = " Striker ";
 
-	public Striker(String Name, int ID) {
-		super(position, ID);
+	public Striker(String Name, int ID,String Path) {
+		super(position, ID, Path);
 		
 		if ( Name == "" ){
 			position = " Striker ";

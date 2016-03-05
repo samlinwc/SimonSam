@@ -4,8 +4,8 @@ public class MidField extends Player {
 
 	static String position = " MidField ";
 	
-	public MidField(String Name, int ID) {
-		super(position, ID);
+	public MidField(String Name, int ID, String Path) {
+		super(position, ID,Path);
 		
 		if ( Name == ""){
 			position = " MidField ";
